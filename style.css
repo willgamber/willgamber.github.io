@@ -1,175 +1,40 @@
 /* ── Reset & base ───────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-:root {
-  --blue:   #1a73e8;
-  --text:   #202124;
-  --muted:  #5f6368;
-  --border: #dadce0;
-  --bg:     #ffffff;
-  --max-w:  1200px;
-  --gap:    2.25rem;
-}
-
-html { scroll-behavior: smooth; }
-
 body {
   font-family: "SFMono-Regular", "Fira Mono", "JetBrains Mono", "Courier New", monospace;
   font-size: 16px;
   line-height: 1.7;
-  color: var(--text);
-  background: var(--bg);
-}
-
-.container {
-  max-width: var(--max-w);
+  color: #000;
+  background: #fff;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
-/* ── Header ──────────────────────────────────────────────────── */
-header {
-  padding: 2.75rem 0 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 2rem;
-}
+a { color: #0000EE; }
+a:visited { color: #551A8B; }
 
-header h1 {
-  font-size: 2rem;
-  font-weight: 400;
-  color: var(--text);
-  letter-spacing: -0.01em;
-}
+h1 { font-size: 1.75rem; font-weight: normal; margin-bottom: 0.25rem; }
 
-header .title {
+.title {
   font-size: 0.95rem;
-  color: var(--muted);
-  margin: 0.4rem 0 1.5rem;
-  line-height: 1.5;
-}
-
-header nav {
-  display: flex;
-  gap: 0;
-  margin-top: 0.25rem;
-}
-
-header nav a {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--muted);
-  text-decoration: none;
-  padding: 0.65rem 1.1rem 0.6rem;
-  border-bottom: 3px solid transparent;
-  transition: color 0.15s, border-color 0.15s;
-}
-
-header nav a:first-child { padding-left: 0; }
-
-header nav a:hover {
-  color: var(--blue);
-  border-bottom-color: var(--blue);
-}
-
-/* ── Main sections ───────────────────────────────────────────── */
-main {
-  padding-bottom: 3rem;
-}
-
-section {
-  margin-bottom: var(--gap);
-  padding-bottom: var(--gap);
-  border-bottom: 1px solid var(--border);
-}
-
-section:last-child {
-  border-bottom: none;
-}
-
-section h2 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--muted);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin-bottom: 1.1rem;
-}
-
-/* ── About section ───────────────────────────────────────────── */
-#about p {
-  margin-bottom: 0.75rem;
-  color: var(--text);
-}
-
-.disclaimer {
-  font-size: 0.88rem;
-  color: var(--muted);
-}
-
-.links {
-  display: block;
-  margin-top: 1rem;
-  font-size: 0.92rem;
-  line-height: 2;
-}
-
-.links a {
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.links a:hover { text-decoration: underline; }
-
-/* ── Paper entries ───────────────────────────────────────────── */
-.paper {
+  color: #444;
   margin-bottom: 1.5rem;
 }
 
-.paper:last-child { margin-bottom: 0; }
+hr { border: none; border-top: 1px solid #000; margin: 1.5rem 0; }
 
-.paper-title {
-  font-weight: 500;
-  color: var(--text);
-  line-height: 1.5;
-}
+section { margin-bottom: 1.5rem; }
 
-.paper-meta {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-top: 0.2rem;
-}
+h2 { font-size: 1rem; font-weight: normal; margin-bottom: 1rem; text-transform: uppercase; }
 
-.paper-links {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 0.35rem;
-  font-size: 0.88rem;
-}
+.disclaimer { font-size: 0.88rem; color: #444; margin-bottom: 0.75rem; }
 
-.paper-links a {
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: 500;
-}
+.links { font-size: 0.92rem; line-height: 2; }
 
-.paper-links a:hover { text-decoration: underline; }
-
-/* ── Footer ──────────────────────────────────────────────────── */
-footer {
-  border-top: 1px solid var(--border);
-  color: var(--muted);
-  font-size: 0.85rem;
-  text-align: center;
-  padding: 1.25rem 0 2rem;
-}
-
-footer a { color: var(--blue); text-decoration: none; }
-footer a:hover { text-decoration: underline; }
-
-/* ── Responsive ──────────────────────────────────────────────── */
-@media (max-width: 600px) {
-  header h1 { font-size: 1.6rem; }
-  .container { padding: 0 1.25rem; }
-}
+.paper { margin-bottom: 1.25rem; }
+.paper-title { font-weight: bold; }
+.paper-meta { font-size: 0.9rem; color: #444; }
+.paper-links { font-size: 0.88rem; margin-top: 0.2rem; }
+.paper-links a { margin-right: 0.75rem; }
