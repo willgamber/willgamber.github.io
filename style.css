@@ -71,3 +71,27 @@ h2 { font-size: 1rem; font-weight: normal; margin-bottom: 1rem; text-transform: 
 .paper-meta { font-size: 0.85rem; color: #444; }
 .paper-links { font-size: 0.85rem; margin-top: 0.2rem; }
 .paper-links a { margin-right: 0.75rem; }
+
+/* ── Mobile responsive ─────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .left-column {
+    flex: 1 1 auto;
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .right-column {
+    width: 100%;
+  }
+}
