@@ -12,10 +12,43 @@ body {
   padding: 2rem;
 }
 
+.container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.left-column {
+  flex: 0 0 300px;
+  position: sticky;
+  top: 2rem;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.profile-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.bio-section {
+  margin-top: 1.5rem;
+}
+
+.bio-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
 a { color: #0000EE; }
 a:visited { color: #551A8B; }
 
-h1 { font-size: 1.75rem; font-weight: normal; margin-bottom: 0.25rem; }
+h1 { font-size: 2rem; font-weight: bold; margin-bottom: 0.25rem; }
 
 .title {
   font-size: 1rem;
